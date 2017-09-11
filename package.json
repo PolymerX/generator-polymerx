@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "ava": "0.22.0",
+    "coveralls": "^2.13.1",
     "cross-env": "5.0.5",
     "fs-extra": "4.0.1",
     "husky": "0.14.3",
