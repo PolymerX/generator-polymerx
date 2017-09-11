@@ -1,0 +1,90 @@
+{
+  "name": "generator-polymerx",
+  "description": "Scaffold out a new PolymerX Skeleton or Element",
+  "version": "0.0.1",
+  "author": "Alessio Occhipinti <info@godev.space> (https://godev.space)",
+  "bugs": {
+    "url": "https://github.com/polymerx/generator-polymerx/issues",
+    "email": "info@godev.space"
+  },
+  "contributors": [
+    "Alessio Occhipinti <info@godev.space> (https://godev.space)"
+  ],
+  "dependencies": {
+    "pascalize": "1.0.1",
+    "yeoman-generator": "1.1.1"
+  },
+  "devDependencies": {
+    "ava": "0.22.0",
+    "cross-env": "5.0.5",
+    "fs-extra": "4.0.1",
+    "husky": "0.14.3",
+    "nyc": "11.2.1",
+    "pify": "3.0.0",
+    "remark-cli": "4.0.0",
+    "remark-preset-github": "0.0.6",
+    "xo": "0.19.0",
+    "yeoman-assert": "3.0.0",
+    "yeoman-test": "1.7.0"
+  },
+  "files": [
+    "app",
+    "element"
+  ],
+  "engines": {
+    "node": ">=6.x"
+  },
+  "homepage": "https://github.com/polymerx/generator-polymerx",
+  "keywords": [
+    "generator-polymerx"
+  ],
+  "license": "MIT",
+  "main": "app/index.js",
+  "nyc": {
+    "check-coverage": true,
+    "lines": 100,
+    "functions": 100,
+    "branches": 100,
+    "reporter": [
+      "lcov",
+      "html",
+      "text"
+    ]
+  },
+  "remarkConfig": {
+    "plugins": [
+      "preset-github"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/polymerx/generator-polymerx"
+  },
+  "scripts": {
+    "lint": "xo && remark . -qfo",
+    "test": "yarn lint && yarn test-coverage",
+    "test:travis": "yarn lint && nyc ava && nyc report --reporter=text-lcov | coveralls",
+    "test-coverage": "cross-env NODE_ENV=test nyc ava"
+  },
+  "ava": {
+    "failWithoutAssertions": false
+  },
+  "xo": {
+    "rules": {
+      "max-len": [
+        "error",
+        {
+          "code": 80,
+          "ignoreUrls": true
+        }
+      ],
+      "capitalized-comments": "off",
+      "camelcase": "off",
+      "no-warning-comments": "off"
+    },
+    "space": true,
+    "ignores": [
+      "element/templates/**"
+    ]
+  }
+}
