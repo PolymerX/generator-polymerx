@@ -36,7 +36,15 @@
   },
   "homepage": "https://github.com/polymerx/generator-polymerx",
   "keywords": [
-    "generator-polymerx"
+    "generator-polymerx",
+    "polymer-generator",
+    "polymer-element",
+    "polymer",
+    "polymer3",
+    "polymer-skeleton",
+    "polymerx",
+    "skeleton",
+    "element"
   ],
   "license": "MIT",
   "main": "app/index.js",
