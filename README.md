@@ -1,5 +1,7 @@
 # generator-polymerx
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/PolymerX/generator-polymerx.svg)](https://greenkeeper.io/)
+
 [![GitHub release](https://img.shields.io/github/release/PolymerX/generator-polymerx.svg?style=flat-square)](https://github.com/PolymerX/generator-polymerx)
 [![Build Status](https://travis-ci.org/PolymerX/generator-polymerx.svg)](https://travis-ci.org/PolymerX/generator-polymerx)
 [![Coverage Status](https://coveralls.io/repos/github/PolymerX/generator-polymerx/badge.svg?style=flat-square)](https://coveralls.io/github/PolymerX/generator-polymerx)
