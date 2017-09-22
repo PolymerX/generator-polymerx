@@ -31,13 +31,13 @@ module.exports = class extends Generator {
       name: 'githubUsername',
       message: 'What is your GitHub username?',
       store: true,
-      validate: x => validations.notEmpty(x, 'GitHub username'),
+      validate: /* istanbul ignore next */ x => validations.notEmpty(x, 'GitHub username'),
       when: () => !this.options.org
     }, {
       name: 'website',
       message: 'What is the URL of your website?',
       store: true,
-      validate: x => validations.notEmpty(x, 'website url'),
+      validate: /* istanbul ignore next */ x => validations.notEmpty(x, 'website url'),
       filter: /* istanbul ignore next */ x => normalizeUrl(x)
     }, {
       name: 'nyc',
@@ -58,8 +58,6 @@ module.exports = class extends Generator {
         pascalModuleName: pascalize(props.appName),
         githubUsername: this.options.org || props.githubUsername,
         repoName,
-        name: this.user.git.name(),
-        email: this.user.git.email(),
         website: props.website,
         humanizedWebsite: humanizeUrl(props.website),
         nyc: props.nyc,
