@@ -26,6 +26,6 @@ test.serial('generates expected files', async () => {
   await pify(generator.run.bind(generator))();
 
   assert.file([
-    'test-name/webpack.config.js'
+    'webpack.config.js'
   ]);
 });

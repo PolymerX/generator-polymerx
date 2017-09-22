@@ -70,8 +70,8 @@
     "lint": "xo",
     "release": "git pull && standard-version",
     "test": "yarn lint && yarn test-coverage",
-    "test:travis": "yarn lint && nyc ava && nyc report --reporter=text-lcov | coveralls",
-    "test-coverage": "cross-env NODE_ENV=test nyc ava"
+    "test:travis": "yarn lint && nyc ava --serial && nyc report --reporter=text-lcov | coveralls",
+    "test-coverage": "cross-env NODE_ENV=test nyc ava --serial"
   },
   "ava": {
     "failWithoutAssertions": false
@@ -81,7 +81,7 @@
       "max-len": [
         "error",
         {
-          "code": 90,
+          "code": 100,
           "ignoreUrls": true
         }
       ],
