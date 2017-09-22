@@ -1,6 +1,6 @@
 import test from 'ava';
 
-import validations from './../element/utils/validations';
+import validations from './../generators/element/utils/validations';
 
 test('validation for "elementName" ("elementWithoutDash")', t => {
   const expected = 'You have to provide a name with a dash ("-")';

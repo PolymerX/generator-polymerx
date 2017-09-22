@@ -47,7 +47,7 @@
     "element"
   ],
   "license": "MIT",
-  "main": "app/index.js",
+  "main": "generators/app/index.js",
   "nyc": {
     "check-coverage": true,
     "lines": 100,
@@ -88,7 +88,7 @@
     },
     "space": true,
     "ignores": [
-      "element/templates/**"
+      "generators/element/templates/**"
     ]
   }
 }
