@@ -4,7 +4,6 @@ import helpers from 'yeoman-test';
 import assert from 'yeoman-assert';
 import {beforeEach, after} from './helpers';
 
-const PATH_APP_GEN = '../../generators/app';
 const PATH_ELEMENT_GEN = '../../generators/element';
 
 test.beforeEach(beforeEach);
@@ -37,18 +36,4 @@ test.serial('Correct PascalCaseName on class', async () => {
   });
   await pify(generator.run.bind(generator))();
   assert.fileContent('test-element/index.js', /class TestElement/);
-});
-
-test.serial('polymerx:app not implemented yet', async () => {
-  const generator = helpers.createGenerator(
-    'polymerx:app', [PATH_APP_GEN], null, {skipInstall: true}
-  );
-
-  helpers.mockPrompt(generator);
-  await pify(generator.run.bind(generator))();
-  assert.noFile([
-    'test-element/index.js',
-    'test-element/template.html',
-    'test-element/style.postcss'
-  ]);
 });

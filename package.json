@@ -11,7 +11,10 @@
     "Alessio Occhipinti <info@godev.space> (https://godev.space)"
   ],
   "dependencies": {
+    "humanize-url": "1.0.1",
+    "normalize-url": "1.9.1",
     "pascalize": "1.0.1",
+    "superb": "1.3.0",
     "yeoman-generator": "2.0.1"
   },
   "devDependencies": {
@@ -78,7 +81,7 @@
       "max-len": [
         "error",
         {
-          "code": 80,
+          "code": 90,
           "ignoreUrls": true
         }
       ],
@@ -88,6 +91,7 @@
     },
     "space": true,
     "ignores": [
+      "generators/app/templates/**",
       "generators/element/templates/**"
     ]
   }
