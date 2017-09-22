@@ -39,7 +39,9 @@ module.exports = class extends Generator {
       store: true,
       validate: /* istanbul ignore next */ x => validations.notEmpty(x, 'website url'),
       filter: /* istanbul ignore next */ x => normalizeUrl(x)
-    }, {
+    }
+    /* TODO: implement
+    {
       name: 'nyc',
       message: 'Do you need code coverage?',
       type: 'confirm',
@@ -49,19 +51,21 @@ module.exports = class extends Generator {
       message: 'Upload coverage to codecov.io?',
       type: 'confirm',
       default: false,
-      when: x => x.nyc
-    }]).then(props => {
+      when: x => x.nyc */
+    ]).then(props => {
       const repoName = `${this.options.org || props.githubUsername}/${props.appName}`;
       const tpl = {
         appName: props.appName,
         appDescription: props.appDescription,
         pascalModuleName: pascalize(props.appName),
         githubUsername: this.options.org || props.githubUsername,
+        name: this.user.git.name(),
+        email: this.user.git.email(),
         repoName,
         website: props.website,
-        humanizedWebsite: humanizeUrl(props.website),
-        nyc: props.nyc,
-        codecov: props.nyc && props.codecov
+        humanizedWebsite: humanizeUrl(props.website)
+        // nyc: props.nyc,
+        // codecov: props.nyc && props.codecov
       };
 
       this.fs.copyTpl(

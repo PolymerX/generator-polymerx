@@ -2,16 +2,21 @@ import test from 'ava';
 
 import validations from './../generators/__utils/validations';
 
+const dashNameMsg = 'You have to provide a name with a dash ("-")';
+
 test('validation for "dashName" ("elementWithoutDash")', t => {
-  const expected = 'You have to provide a name with a dash ("-")';
   const actual = validations.dashName('elementWithoutDash');
-  t.is(expected, actual, 'Should return the error message');
+  t.is(dashNameMsg, actual, 'Should return the error message');
 });
 
 test('validation for "dashName" ("<empty-name>")', t => {
-  const expected = 'You have to provide a name with a dash ("-")';
   const actual = validations.dashName('');
-  t.is(expected, actual, 'Should return the error message');
+  t.is(dashNameMsg, actual, 'Should return the error message');
+});
+
+test('validation for "dashName" ("name with space")', t => {
+  const actual = validations.dashName('name with space');
+  t.is(dashNameMsg, actual, 'Should return the error message');
 });
 
 test('validation for "dashName" ("correct-element")', t => {
