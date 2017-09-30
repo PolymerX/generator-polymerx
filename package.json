@@ -12,7 +12,7 @@
   ],
   "dependencies": {
     "pascalize": "1.0.1",
-    "yeoman-generator": "2.0.0"
+    "yeoman-generator": "2.0.1"
   },
   "devDependencies": {
     "ava": "0.22.0",
