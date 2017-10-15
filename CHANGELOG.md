@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.0"></a>
+# [0.1.0](https://github.com/polymerx/generator-polymerx/compare/v0.0.4...v0.1.0) (2017-10-15)
+
+
+### Bug Fixes
+
+* **package:** update yeoman-generator to version 2.0.1 ([2dc67d7](https://github.com/polymerx/generator-polymerx/commit/2dc67d7))
+
+
+### Features
+
+* **app-generator:** added logic for app generator ([ae44d2a](https://github.com/polymerx/generator-polymerx/commit/ae44d2a))
+* **app-generator:** added logic for app generator ([f2cac35](https://github.com/polymerx/generator-polymerx/commit/f2cac35))
+* **codecov:** switch to codecov ([1d34bfa](https://github.com/polymerx/generator-polymerx/commit/1d34bfa))
+* **generator:** added app generator ([f046b1c](https://github.com/polymerx/generator-polymerx/commit/f046b1c))
+* **generator:** added app generator ([3111faa](https://github.com/polymerx/generator-polymerx/commit/3111faa))
+* **test:** added tests for app generator ([7944da0](https://github.com/polymerx/generator-polymerx/commit/7944da0))
+* **test:** added tests for app generator ([7e32af0](https://github.com/polymerx/generator-polymerx/commit/7e32af0))
+
+
+
 <a name="0.0.4"></a>
 ## [0.0.4](https://github.com/polymerx/generator-polymerx/compare/v0.0.3...v0.0.4) (2017-09-11)
 
