@@ -22,7 +22,7 @@ module.exports = class extends Generator {
       name: 'appName',
       message: 'What do you want to name your Polymer Skeleton App?',
       default: 'polymer-skeleton',
-      filter: validations.dashName
+      validate: validations.dashName
     }, {
       name: 'appDescription',
       message: 'What is your app description?',
@@ -57,7 +57,7 @@ module.exports = class extends Generator {
       const tpl = {
         appName: props.appName,
         appDescription: props.appDescription,
-        pascalModuleName: pascalize(props.appName),
+        pascalAppName: pascalize(props.appName),
         githubUsername: this.options.org || props.githubUsername,
         name: this.user.git.name(),
         email: this.user.git.email(),
@@ -68,17 +68,25 @@ module.exports = class extends Generator {
         // codecov: props.nyc && props.codecov
       };
 
+      const mv = (from, to) => {
+        this.fs.move(this.destinationPath(from, '*'), this.destinationPath(to));
+      };
+
       this.fs.copyTpl(
         [`${this.templatePath()}/**`],
         this.destinationPath(),
         tpl,
         {},
         {globOptions: {dot: true}});
+
+      mv('src/components/containers/sk-app', `src/components/containers/${tpl.appName}`);
     });
   }
+
   git() {
     this.spawnCommandSync('git', ['init']);
   }
+
   install() {
     this.installDependencies({
       npm: false,
