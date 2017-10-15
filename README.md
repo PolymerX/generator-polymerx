@@ -33,7 +33,12 @@ yarn add global yo generator-polymerx
 
 #### Skeleton
 
-:construction:
+Will create a copy of the [Polymer Skeleton](https://github.com/PolymerX/polymer-skeleton).
+Create a directory, and inside run:
+
+```bash
+yo polymerx
+```
 
 #### Element
 
@@ -44,14 +49,12 @@ Within your `components/` directory run:
 yo polymerx:element
 ```
 
-
-## License
-
-[MIT](LICENSE) © [Alessio Occhipinti](https://godev.space)
-
-
 ## Contributors
 
 | Name                   | Website               |
 | ---------------------- | --------------------- |
 | **Alessio Occhipinti** | <https://godev.space> |
+
+## License
+
+[MIT](LICENSE) © [PolymerX](https://github.com/PolymerX)
