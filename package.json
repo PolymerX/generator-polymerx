@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "ava": "0.22.0",
-    "coveralls": "2.13.2",
+    "codecov": "2.3.1",
     "cross-env": "5.0.5",
     "fs-extra": "4.0.2",
     "husky": "0.15.0-beta.2",
@@ -70,7 +70,7 @@
     "lint": "xo",
     "release": "git pull && standard-version",
     "test": "yarn lint && yarn test-coverage",
-    "test:travis": "yarn lint && nyc ava --serial && nyc report --reporter=text-lcov | coveralls",
+    "test:travis": "yarn lint && nyc ava --serial && nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "test-coverage": "cross-env NODE_ENV=test nyc ava --serial"
   },
   "ava": {

@@ -4,7 +4,7 @@
 
 [![GitHub release](https://img.shields.io/github/release/PolymerX/generator-polymerx.svg?style=flat-square)](https://github.com/PolymerX/generator-polymerx)
 [![Build Status](https://travis-ci.org/PolymerX/generator-polymerx.svg)](https://travis-ci.org/PolymerX/generator-polymerx)
-[![Coverage Status](https://coveralls.io/repos/github/PolymerX/generator-polymerx/badge.svg?style=flat-square)](https://coveralls.io/github/PolymerX/generator-polymerx)
+[![codecov](https://codecov.io/gh/PolymerX/generator-polymerx/branch/master/graph/badge.svg)](https://codecov.io/gh/PolymerX/generator-polymerx)
 [![GitHub issues](https://img.shields.io/github/issues/PolymerX/generator-polymerx.svg?style=flat-square)](https://github.com/PolymerX/generator-polymerx/issues)
 [![code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg?style=flat-square)](https://github.com/sindresorhus/xo)
 [![Polymer Skeleton](https://img.shields.io/badge/polymerX-SKELETON-435877.svg?style=flat-square)](https://github.com/PolymerX/polymer-skeleton)
@@ -33,7 +33,12 @@ yarn add global yo generator-polymerx
 
 #### Skeleton
 
-:construction:
+Will create a copy of the [Polymer Skeleton](https://github.com/PolymerX/polymer-skeleton).
+Create a directory, and inside run:
+
+```bash
+yo polymerx
+```
 
 #### Element
 
@@ -44,14 +49,12 @@ Within your `components/` directory run:
 yo polymerx:element
 ```
 
-
-## License
-
-[MIT](LICENSE) © [Alessio Occhipinti](https://godev.space)
-
-
 ## Contributors
 
 | Name                   | Website               |
 | ---------------------- | --------------------- |
 | **Alessio Occhipinti** | <https://godev.space> |
+
+## License
+
+[MIT](LICENSE) © [PolymerX](https://github.com/PolymerX)
