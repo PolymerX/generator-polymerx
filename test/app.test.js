@@ -20,7 +20,10 @@ test.serial('generates expected files', async () => {
   );
 
   helpers.mockPrompt(generator, {
-    appName: 'test-name'
+    appName: 'test-name',
+    appDescription: 'foo',
+    githubUsername: 'username',
+    website: 'some.website'
   });
 
   await pify(generator.run.bind(generator))();
@@ -83,7 +86,10 @@ test.serial('check content inside src', async () => {
   );
 
   helpers.mockPrompt(generator, {
-    appName: 'awesome-app'
+    appName: 'awesome-app',
+    appDescription: 'foo',
+    githubUsername: 'username',
+    website: 'some.website'
   });
 
   await pify(generator.run.bind(generator))();
