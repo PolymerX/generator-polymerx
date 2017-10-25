@@ -1,7 +1,7 @@
 {
   "name": "generator-polymerx",
   "description": "Scaffold out a new PolymerX Skeleton or Element",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Alessio Occhipinti <info@godev.space> (https://godev.space)",
   "bugs": {
     "url": "https://github.com/polymerx/generator-polymerx/issues",
