@@ -31,8 +31,7 @@
     "yeoman-test": "1.7.0"
   },
   "files": [
-    "app",
-    "element"
+    "generators"
   ],
   "engines": {
     "node": ">=6.x"
