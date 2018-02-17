@@ -20,7 +20,8 @@ module.exports = class extends Generator {
       this.fs.copyTpl(
         [`${this.templatePath()}/**`],
         this.destinationPath(props.elementName),
-        tpl);
+        tpl
+      );
     });
   }
 };

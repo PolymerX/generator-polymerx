@@ -39,20 +39,7 @@ module.exports = class extends Generator {
       store: true,
       validate: /* istanbul ignore next */ x => validations.notEmpty(x, 'website url'),
       filter: /* istanbul ignore next */ x => normalizeUrl(x)
-    }
-    /* TODO: implement
-    {
-      name: 'nyc',
-      message: 'Do you need code coverage?',
-      type: 'confirm',
-      default: false
-    }, {
-      name: 'codecov',
-      message: 'Upload coverage to codecov.io?',
-      type: 'confirm',
-      default: false,
-      when: x => x.nyc */
-    ]).then(props => {
+    }]).then(props => {
       const repoName = `${this.options.org || props.githubUsername}/${props.appName}`;
       const tpl = {
         appName: props.appName,
@@ -88,10 +75,12 @@ module.exports = class extends Generator {
   }
 
   install() {
-    this.installDependencies({
-      npm: false,
-      bower: false,
-      yarn: true
-    });
+    this.installDependencies(
+      {
+        npm: false,
+        bower: false,
+        yarn: true
+      }
+    );
   }
 };
