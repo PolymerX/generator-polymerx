@@ -100,7 +100,7 @@ test.serial('check content inside src', async () => {
   );
   assert.fileContent(
     'src/components/containers/awesome-app/index.js',
-     /('awesome-app', AwesomeApp)/
+    /('awesome-app', AwesomeApp)/
   );
   assert.fileContent(
     'src/index.html',
