@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.1"></a>
+## [0.2.1](https://github.com/polymerx/generator-polymerx/compare/v0.2.0...v0.2.1) (2018-03-01)
+
+
+### Bug Fixes
+
+* **package:** update normalize-url to version 2.0.0 ([8f84fc5](https://github.com/polymerx/generator-polymerx/commit/8f84fc5))
+* **package:** update normalize-url to version 2.0.1 ([75e88d3](https://github.com/polymerx/generator-polymerx/commit/75e88d3))
+* **package:** update yeoman-generator to version 2.0.2 ([348baba](https://github.com/polymerx/generator-polymerx/commit/348baba))
+* **package:** update yeoman-generator to version 2.0.3 ([27efd81](https://github.com/polymerx/generator-polymerx/commit/27efd81))
+
+
+
 <a name="0.2.0"></a>
 # [0.2.0](https://github.com/polymerx/generator-polymerx/compare/v0.1.1...v0.2.0) (2017-11-30)
 
