@@ -11,6 +11,8 @@
 
 > Scaffold out a new PolymerX Skeleton or Element
 
+## ⚠️ DEPRECATION WARNING: this tool is no longer updated. Please use the [polymerx-cli](https://github.com/PolymerX/polymerx-cli) instead. ⚠️
+
 
 ## Install
 
