@@ -20,7 +20,7 @@
   "devDependencies": {
     "ava": "0.25.0",
     "codecov": "3.0.1",
-    "cross-env": "5.1.4",
+    "cross-env": "5.1.5",
     "fs-extra": "6.0.0",
     "husky": "0.15.0-rc.2",
     "nyc": "11.7.1",
